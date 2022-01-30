@@ -1,0 +1,12 @@
+.header {
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.45;
+}
+
+.bi .intro {
+    /* background-image: url('/images/logo.png'); */
+}
