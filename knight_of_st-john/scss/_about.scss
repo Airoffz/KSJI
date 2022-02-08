@@ -1,0 +1,171 @@
+
+.about {
+    position: relative;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    @include breakpoint-down(small) {
+        margin: 0 1rem;
+    }
+
+    &__img {
+         @include absolutecenter;
+         opacity: 0.15;
+         z-index: -99;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 0px;
+        margin-top: 25px;
+        color: $darkBlue;
+         
+        @include breakpoint-up(medium) {
+           font-size: 3rem;
+        }
+
+    }
+
+    &__content {
+        font-size: 1.1rem;
+        margin-top: 5rem;
+
+        &--history {
+            // width: 50%;
+            line-height: 1.8;
+            
+
+            
+            @include breakpoint-down(small) {
+                width: 100%;
+            }
+
+            .icon {
+                display: block;
+                
+                @include breakpoint-down(small) {
+                    margin: 0 auto;
+                }
+            }
+    
+            h3 {
+                color: rgb(128, 4, 4);
+                // margin: 0px 45%;
+                // margin-top: -5px;
+
+                 @include breakpoint-down(small) {
+                    margin-left: 40.5%
+                }
+                
+            }
+    
+            p {
+             text-align: start;
+                
+            }
+        }
+    
+        &--mission {
+            width: 50%;
+            margin-left: 50%;
+            
+            @include breakpoint-down(small) {
+                width: 100%;
+                margin-left: 0px;
+                
+            }
+            
+
+            .icon {
+                 display: block;
+                
+                @include breakpoint-down(small) {
+                    margin: 0 auto;
+                }
+            }
+
+            h3 {
+                color: rgb(128, 4, 4);
+            
+                @include breakpoint-down(small) {
+                    margin-left: 40.5%
+                }
+            }
+
+            p {
+                line-height: 1.8;
+            }
+
+            ul {
+                line-height: 1.8;
+                list-style: decimal;
+            }
+        }
+    }
+
+
+    
+}
+
+.aux {
+    color: rgb(128, 4, 4);
+    font-size: 17px;
+    margin: 0.7rem 4rem 0.2rem 6rem;
+
+    @include breakpoint-up(medium) {
+      margin: 0.7rem 4rem 0.2rem 0rem;
+    }
+}
+
+.list {
+    list-style-type: lower-roman;
+    padding-left: 5%;
+
+    @include breakpoint-down(small) {
+    padding-left: 25.5%;
+
+    }
+}
+
+.move {
+    margin: 0 47.3%;
+}
+
+.ok {
+    align-self: center;
+    text-align: center;
+    padding-right: 5rem;
+
+
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+
+}
+
+.presido_pic {
+    display: flex;
+    justify-content: space-between;
+
+    &--list {
+        // flex: 1;
+    }
+
+    &--img {
+        // flex: 1;
+       
+
+
+       
+        &__pic {
+             width: 27rem;
+             height: 34rem;
+             border-radius: 5%;
+             border-bottom-right-radius: 5%;
+             border-top-right-radius: 5%;
+             
+
+
+        }
+    }
+}
