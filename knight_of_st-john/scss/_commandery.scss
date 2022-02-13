@@ -1,3 +1,4 @@
+
 .president {
   &__img {
     // width: 30%;
@@ -11,6 +12,11 @@
       // width: 50%;
       border-radius: 3%;
       box-shadow: 0 5px 10px #11090270;
+
+      @include breakpoint-up(medium) {
+        width: 15rem;
+        height: 12rem;
+      }
     }
 
     &--title {
@@ -52,6 +58,11 @@
         height: 6.25rem;
         border-radius: 3%;
         box-shadow: 0 5px 10px #11090270;
+
+        @include breakpoint-up(medium) {
+          width: 14rem;
+          height: 11rem;
+        }
       }
 
       &--title {
@@ -92,6 +103,11 @@
       height: 6.25rem;   
       border-radius: 3%;
       box-shadow: 0 5px 10px #11090270;
+
+      @include breakpoint-up(medium) {
+          width: 13rem;
+          height: 10rem;
+      }
     }
 
     &--title {
@@ -135,6 +151,11 @@
         height: 6rem;
         border-radius: 3%;
         box-shadow: 0 5px 10px #11090270;
+
+        @include breakpoint-up(medium) {
+          width: 12rem;
+          height: 9rem;
+        }
       }
 
       &--title {
@@ -177,11 +198,17 @@
     }
 
     &--vice {
+
       img {
         width: 7rem;
         height: 5rem;
         border-radius: 3%;
         box-shadow: 0 5px 10px #11090270;
+
+        @include breakpoint-up(medium) {
+          width: 10rem;
+          height: 7rem;
+        }
       }
 
       &--title {
@@ -229,4 +256,49 @@
     svg {
         @include absolutecenter;
     }
+}
+
+
+table {
+  margin: 1rem auto;
+  border: 1px solid #d9d7ce;
+  border-spacing: 0px;
+
+  tr {
+    
+    td {
+      width: 43px;
+      height: 23px;
+      border: 0.5px solid #9b9990;
+    }
+
+     th{
+       width: 324px;
+       height: 24px; 
+       border: 0.5px solid #9b9990;
+       text-align: start;
+
+
+       @include breakpoint-down(small) {
+         font-size: 0.8125rem;
+       }
+
+     }
+  }
+}
+
+.MEMBERSHIP-ROLL {
+  margin: 5rem 20% 0rem 30%;
+  text-decoration: underline;
+  
+   @include breakpoint-down(small) {
+    font-size: 1rem;
+    margin: 5rem 0 0 2.5%;
+  }
+}
+
+.thead {
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 900;
+  text-align: center;
 }

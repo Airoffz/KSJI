@@ -1,0 +1,53 @@
+
+.charism {
+    background: white;
+    position: relative;
+    padding: 2rem;
+    line-height: 1.8;
+
+    &__pic {
+        margin: 20px;
+        float: left;
+        shape-outside: circle(50%);
+
+        img {
+
+            @include breakpoint-down(small){
+                height: 10rem;
+            }
+        }
+     }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        color: $darkBlue;
+         
+        @include breakpoint-up(medium) {
+           font-size: 2.8rem;
+        }
+
+    }
+
+    .content {
+        display: inline;
+        font-size: 1.1rem;
+        z-index: 100;
+
+        @include breakpoint-down(small) {
+            font-size: 1.0125rem;
+        }
+    }
+
+         h3 {
+            color: rgb(128, 4, 4);
+            margin: 1rem 0;
+            text-align: center;
+
+            @include breakpoint-down(small) {
+              font-size: 1rem;
+            }
+        }
+
+}

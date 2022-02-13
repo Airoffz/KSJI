@@ -34,7 +34,7 @@ a, a:visited, a:hover {
 .line::before {
   content: "";
   width: 8rem;
-  height: 0.1rem;
+  height: 0.095rem;
   display: block;
   margin: 0 auto;
   background-color: #fc036b;
@@ -482,6 +482,13 @@ a, a:visited, a:hover {
   margin-top: 5rem;
 }
 
+@media (max-width: 39.9375em) {
+  .about__content {
+    margin-top: 4rem;
+    font-size: 1.0125rem;
+  }
+}
+
 .about__content--history {
   line-height: 1.8;
 }
@@ -563,6 +570,13 @@ a, a:visited, a:hover {
   margin: 0.7rem 4rem 0.2rem 6rem;
 }
 
+@media (max-width: 39.9375em) {
+  .aux {
+    margin: 0;
+    text-align: center;
+  }
+}
+
 @media (min-width: 40em) {
   .aux {
     margin: 0.7rem 4rem 0.2rem 0rem;
@@ -578,10 +592,6 @@ a, a:visited, a:hover {
   .list {
     padding-left: 25.5%;
   }
-}
-
-.move {
-  margin: 0 47.3%;
 }
 
 .ok {
@@ -613,6 +623,32 @@ a, a:visited, a:hover {
   border-radius: 5%;
   border-bottom-right-radius: 5%;
   border-top-right-radius: 5%;
+  -webkit-box-shadow: 0 5px 10px #11090270;
+          box-shadow: 0 5px 10px #11090270;
+}
+
+.mobile-pic {
+  text-align: center;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 64em) {
+  .mobile-pic {
+    display: none;
+  }
+}
+
+.mobile-pic__img {
+  width: 17rem;
+  height: 19rem;
+  border-radius: 3%;
+  -webkit-box-shadow: 0 5px 10px #11090270;
+          box-shadow: 0 5px 10px #11090270;
+}
+
+.pic2 {
+  margin-top: 4rem;
 }
 
 .img {
@@ -768,6 +804,13 @@ a, a:visited, a:hover {
           box-shadow: 0 5px 10px #11090270;
 }
 
+@media (min-width: 40em) {
+  .president__img img {
+    width: 15rem;
+    height: 12rem;
+  }
+}
+
 .president__img--title {
   display: block;
   font-weight: bold;
@@ -810,6 +853,13 @@ a, a:visited, a:hover {
           box-shadow: 0 5px 10px #11090270;
 }
 
+@media (min-width: 40em) {
+  .vice-presidents__img--vice img {
+    width: 14rem;
+    height: 11rem;
+  }
+}
+
 .vice-presidents__img--vice--title {
   display: block;
   font-weight: bold;
@@ -845,6 +895,13 @@ a, a:visited, a:hover {
   border-radius: 3%;
   -webkit-box-shadow: 0 5px 10px #11090270;
           box-shadow: 0 5px 10px #11090270;
+}
+
+@media (min-width: 40em) {
+  .rc__img img {
+    width: 13rem;
+    height: 10rem;
+  }
 }
 
 .rc__img--title {
@@ -887,6 +944,13 @@ a, a:visited, a:hover {
   border-radius: 3%;
   -webkit-box-shadow: 0 5px 10px #11090270;
           box-shadow: 0 5px 10px #11090270;
+}
+
+@media (min-width: 40em) {
+  .financial__img--vice img {
+    width: 12rem;
+    height: 9rem;
+  }
 }
 
 .financial__img--vice--title {
@@ -938,6 +1002,13 @@ a, a:visited, a:hover {
           box-shadow: 0 5px 10px #11090270;
 }
 
+@media (min-width: 40em) {
+  .trustee__img--vice img {
+    width: 10rem;
+    height: 7rem;
+  }
+}
+
 .trustee__img--vice--title {
   display: block;
   font-weight: bold;
@@ -985,6 +1056,105 @@ a, a:visited, a:hover {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+table {
+  margin: 1rem auto;
+  border: 1px solid #d9d7ce;
+  border-spacing: 0px;
+}
+
+table tr td {
+  width: 43px;
+  height: 23px;
+  border: 0.5px solid #9b9990;
+}
+
+table tr th {
+  width: 324px;
+  height: 24px;
+  border: 0.5px solid #9b9990;
+  text-align: start;
+}
+
+@media (max-width: 39.9375em) {
+  table tr th {
+    font-size: 0.8125rem;
+  }
+}
+
+.MEMBERSHIP-ROLL {
+  margin: 5rem 20% 0rem 30%;
+  text-decoration: underline;
+}
+
+@media (max-width: 39.9375em) {
+  .MEMBERSHIP-ROLL {
+    font-size: 1rem;
+    margin: 5rem 0 0 2.5%;
+  }
+}
+
+.thead {
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+
+.charism {
+  background: white;
+  position: relative;
+  padding: 2rem;
+  line-height: 1.8;
+}
+
+.charism__pic {
+  margin: 20px;
+  float: left;
+  shape-outside: circle(50%);
+}
+
+@media (max-width: 39.9375em) {
+  .charism__pic img {
+    height: 10rem;
+  }
+}
+
+.charism h2 {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: #2d314d;
+}
+
+@media (min-width: 40em) {
+  .charism h2 {
+    font-size: 2.8rem;
+  }
+}
+
+.charism .content {
+  display: inline;
+  font-size: 1.1rem;
+  z-index: 100;
+}
+
+@media (max-width: 39.9375em) {
+  .charism .content {
+    font-size: 1.0125rem;
+  }
+}
+
+.charism h3 {
+  color: #800404;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+@media (max-width: 39.9375em) {
+  .charism h3 {
+    font-size: 1rem;
+  }
 }
 
 .footer {
